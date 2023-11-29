@@ -16,13 +16,17 @@
     <title>Html5 Form with Bootstrap</title>
 </head>
 <body>
+  <!--Abrimos el container con form (el profe lo explica así en clase),pero he probado con div y funciona igual.-->
     <form class="container border mt-2 ">
+  <!--La primera fila es el Título.-->
       <div class="row bg-light bg-gradient p-1 border">
         <h1 class="col">Payment form example</h2>
       </div>
+  <!--La segunda fila es la alerta.-->    
       <div class= "row m-2">
         <div class="alert alert-danger" role="alert">Some fields are missing.</div>
       </div>
+  <!--La tercera fila es el card, cvc y amount.-->
       <div class= "row g-3">
           <div class="col-5">
             <label for="card">Card #</label>
@@ -40,6 +44,7 @@
             </div>
           </div>
       </div>
+  <!--La cuarta fila es el First Name y Last Name-->
       <div class= "row g-3 mt-2">
         <div class="col-6">
           <label for="first name">First Name</label>
@@ -50,6 +55,7 @@
           <input type="text" class="form-control" aria-label="Last Name">
         </div>
       </div>
+  <!--La quinta fila es la city, state y postal code.-->
       <div class="row g-3 mt-2">
         <div class="col-6">
           <label for="City">City</label>
@@ -69,8 +75,9 @@
           <input type="text" class="form-control" placeholder="Postal Code" aria-label="Postal Code">
         </div>
       </div>
+  <!--La sexta fila es la parte de las tarjetas y message-->
       <div class="row g-3 mt-2 justify-content-between">
-        <div class="col-auto justify-content-between">
+        <div class="col-auto justify-content-between"> <!--El "col-auto" ajusta automaticamente la columna-->
           <label for="Credit-card">We accept:</label> 
           <div class="bg-secondary text-light p-2 rounded">
             <div class="form-check form-check-inline">
@@ -97,6 +104,7 @@
           <div class="form-text">Add any notes here.</div>
         </div>
       </div>
+  <!--Última fila, contiene los botones send y cancel-->
       <div class="row bg-light bg-gradient p-1  mt-2 border-top">
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
           <button class="btn btn-secondary me-md-2" type="button">Cancel</button>
